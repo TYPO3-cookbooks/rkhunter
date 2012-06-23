@@ -421,23 +421,16 @@ SCRIPTWHITELIST=/usr/sbin/prelink
 # Allow the specified hidden directories.
 # One directory per line (use multiple ALLOWHIDDENDIR lines).
 #
-#ALLOWHIDDENDIR=/etc/.java
-#ALLOWHIDDENDIR=/dev/.udev
-#ALLOWHIDDENDIR=/dev/.udevdb
-#ALLOWHIDDENDIR=/dev/.udev.tdb
-#ALLOWHIDDENDIR=/dev/.static
-#ALLOWHIDDENDIR=/dev/.initramfs
-#ALLOWHIDDENDIR=/dev/.SRC-unix
-#ALLOWHIDDENDIR=/dev/.mdadm
+
+# needed on physical systems
+ALLOWHIDDENDIR=/dev/.udev
+ALLOWHIDDENDIR=/dev/.initramfs
 
 #
 # Allow the specified hidden files.
 # One file per line (use multiple ALLOWHIDDENFILE lines).
 # 
-
-# needed on physical systems
-ALLOWHIDDENFILE=/dev/.udev
-ALLOWHIDDENFILE=/dev/.initramfs
+#ALLOWHIDDENFILE=/dev/foo
 
 
 #
