@@ -40,3 +40,11 @@ template "/etc/rkhunter.conf" do
     :sysadmins => sysadmin_group
   )
 end
+
+template "/etc/apt/apt.conf.d/90rkhunter" do
+  source "90rkhunter.erb"
+  mode "644"
+  variables(
+    :sysadmins => sysadmin_group
+  )
+end
