@@ -847,8 +847,11 @@ INSTALLDIR="/usr"
 
 ALLOWHIDDENDIR=/dev/.initramfs
 ALLOWHIDDENDIR=/dev/.udev
+ALLOWHIDDENDIR=/etc/.git
 ALLOWHIDDENDIR=/etc/.java
 
+ALLOWHIDDENFILE=/etc/.etckeeper
+ALLOWHIDDENFILE=/etc/.gitignore
 ALLOWHIDDENFILE=/etc/.rsyncd.secret
 
 DISABLE_TESTS="suspscan hidden_procs deleted_files packet_cap_apps os_specific"
