@@ -845,8 +845,11 @@ INSTALLDIR="/usr"
 
 ######################## TYPO3 modifications #######################
 
+ALLOWHIDDENDIR=/dev/.initramfs
+ALLOWHIDDENDIR=/dev/.udev
 ALLOWHIDDENDIR=/etc/.java
-DISABLE_TESTS="suspscan hidden_procs deleted_files packet_cap_apps os_specific"
-APP_WHITELIST="gpg:1.4.10 openssl:0.9.8o php:5.3.3 sshd:5.5p1"
 
 ALLOWHIDDENFILE=/etc/.rsyncd.secret
+
+DISABLE_TESTS="suspscan hidden_procs deleted_files packet_cap_apps os_specific"
+APP_WHITELIST="gpg:1.4.10 openssl:0.9.8o php:5.3.3 sshd:5.5p1"
