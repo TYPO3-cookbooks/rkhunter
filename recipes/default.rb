@@ -33,8 +33,8 @@ search(:users, 'groups:sysadmin') do |u|
 end
 
 
-template "/etc/rkhunter.conf" do
-  source "rkhunter.conf.erb"
+template "/etc/rkhunter.conf.local" do
+  source "rkhunter.conf.local.erb"
   mode "644"
   variables(
     :sysadmins => sysadmin_group
