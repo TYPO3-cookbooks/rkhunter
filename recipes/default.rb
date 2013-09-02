@@ -48,3 +48,6 @@ template "/etc/apt/apt.conf.d/90rkhunter" do
     :sysadmins => sysadmin_group
   )
 end
+
+# Revert the original configuration file
+include_recipe "rkhunter::revert-config"
