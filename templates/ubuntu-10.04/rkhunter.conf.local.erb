@@ -3,6 +3,9 @@
 
 # Local settings for rkhunter
 
+# Allow the following accounts to have no password
+PWDLESS_ACCOUNTS="<%= @sysadmins.join(" ") %>"
+
 ALLOWHIDDENDIR=/dev/.initramfs
 ALLOWHIDDENDIR=/dev/.udev
 ALLOWHIDDENDIR=/etc/.git
