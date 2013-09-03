@@ -43,5 +43,5 @@ execute "fix-rkhunter-conf" do
     dpkg -i --force-confmiss /var/cache/apt/archives/rkhunter_*.deb
     rkhunter --propupd
   EOH
-  not_if 'md5sum /etc/rkhunter.conf | egrep "(6fca75012d0bf260b898a6ae562acf46)"'
+  not_if 'md5sum /etc/rkhunter.conf | egrep "(6fca75012d0bf260b898a6ae562acf46|8ff6a91c7fca3c1bd4ead1c42ad8da01)"'
 end
