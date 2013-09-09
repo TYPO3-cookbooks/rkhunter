@@ -1,6 +1,7 @@
 ## v0.2.0:
 
 * [FEATURE] Rename execute[fix-rkhunter-conf] to execute[RevertRkhunterConf]
+* [FEATURE] Use notify to revert the rkhunter.conf file
 
 ## v0.1.2:
 

@@ -39,6 +39,7 @@ template "/etc/rkhunter.conf.local" do
   variables(
     :sysadmins => sysadmin_group
   )
+  notifies :run, "execute[RevertRkhunterConf]", :immediately
 end
 
 template "/etc/apt/apt.conf.d/90rkhunter" do
