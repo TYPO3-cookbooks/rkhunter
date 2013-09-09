@@ -34,7 +34,7 @@ package "rkhunter"
 #
 # This recipe should be run once after upgrading to 0.1.0 or later.
 
-execute "fix-rkhunter-conf" do
+execute "RevertRkhunterConf" do
   cwd '/root'
   command <<-EOH
     apt-get clean
